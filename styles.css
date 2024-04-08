@@ -1,0 +1,49 @@
+body{
+    margin:0;
+}
+
+nav{
+    background-color: cornflowerblue;
+    height: 50px;
+}
+
+header{
+    background-color: greenyellow;
+    height: 100px;
+}
+
+section{
+    background-color: yellow;
+    margin: 30px 40px ;
+
+}
+
+footer{
+    background-color: red;
+    height: 70px;
+}
+
+#section-header{
+    background-color: orange;
+    height: 50px;
+}
+
+#posts-container{
+    background-color: aquamarine;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+}
+
+.post{
+    background-color: gold;
+    width: 100px; 
+    height: 100px;
+    /*flex-grow: 1;
+    flex-basis: 30px;*/
+}
+
+
