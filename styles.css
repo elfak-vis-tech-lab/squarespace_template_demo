@@ -6,12 +6,12 @@ body{
 
 
 nav{
-    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
-    width: 100%;
+    /* width: 100%; */
+    align-self: stretch;
+    flex-wrap: wrap;
     
 }
 
@@ -24,6 +24,7 @@ nav{
     display: flex;
     gap: 10px;
     align-items: baseline;
+    
 }
 
 #nav-links a{
@@ -37,20 +38,61 @@ nav{
     
 }
 
+#nav-menu-icon{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#nav-menu-icon > div{
+    height: 3px;
+    width: 30px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    #nav-links{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(16, 106, 86);
+    }
+
+    #nav-menu-icon{
+        display: flex;
+    }
+}
+
 header{
     background-image: url("./images/header.jpg");
-    height: 300px;
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 30px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+header>*{
+    z-index: 1;
+    /*position: relative;*/
 }
 
 header>h2,
 header>h1{
     color: white;
+}
+
+#header-overlay{
+
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .round-button{
@@ -72,8 +114,22 @@ section{
 }
 
 footer{
+    background-color: rgb(16, 106, 86);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+footer button{
     background-color: red;
-    height: 70px;
+    border: none;
+}
+
+footer input{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
 }
 
 #section-header{
@@ -95,7 +151,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    max-width: 450px;
 }
 
 .post img{

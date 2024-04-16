@@ -7,18 +7,26 @@
 			href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:400,700"
 			rel="stylesheet"
 		/>
+        <meta name="viewport"
+content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
+            <div id="header-overlay"></div>
             <nav>
                 <div id="logo">WEB</div>
-                <div id="nav-links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-                <button class="round-button">Take Action</button>
-            </div>
+                    <div id="nav-menu-icon" onclick="handle_menu_click()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                    <button class="round-button">Take Action</button>
+                </div>
             </nav>
             <h2>Sustainability</h2>
             <h1>STARTS WITH YOU</h1>
@@ -58,6 +66,23 @@
                
             </div>
         </section>
-        <footer></footer>
+        <footer>
+            <div>
+                <input type="text"/>
+                <button class="round-button">Subscribe</button>
+            </div>
+            <p>© 2024 ELFAK. All Rights Reserved.</p>
+        </footer>
+        <script>
+            function handle_menu_click(){
+                const navLinks=document.getElementById("nav-links");
+                if (navLinks.style.display=='flex'){
+                    navLinks.style.display='none';
+                }
+                else{
+                    navLinks.style.display='flex';
+                }
+            }
+        </script>
     </body>
 </html>
