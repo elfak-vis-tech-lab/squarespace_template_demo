@@ -22,9 +22,9 @@ content="width=device-width, initial-scale=1">
                     </div>
                     <div id="nav-links">
                     <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Contact</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#">Gallery</a>
                     <button class="round-button">Take Action</button>
                 </div>
             </nav>
@@ -38,7 +38,59 @@ content="width=device-width, initial-scale=1">
                 <p>Some of the Earth's greatest landscapes are threatened by increased road construction, oil and gas exploration, and mining. We aim to protect these areas from inappropriate development, but we cannot achieve our goals alone. Find out how you can help.</p>
 
             </div>
-            <div id="posts-container">
+            <div class="gallery-container">
+                <div class="gallery-images">
+                    <img id="image1" class="gallery-img" src="./images/img1.jpg">
+                    <img id="image2" class="gallery-img" src="./images/img2.jpg">
+                    <img id="image3" class="gallery-img" src="./images/img3.jpg">
+                    <img id="image4" class="gallery-img" src="./images/img4.jpg">
+                    <img id="image5" class="gallery-img" src="./images/img5.jpg">
+                </div>
+                <nav class="gallery-nav">
+                    <a href="#image1">
+                        <img class="gallery-nav-img" src="./images/img1.jpg">
+                    </a>
+                    <a href="#image2">
+                        <img class="gallery-nav-img" src="./images/img2.jpg">
+                    </a>
+                    <a href="#image3">
+                        <img class="gallery-nav-img" src="./images/img3.jpg">
+                    </a>
+                    <a href="#image4">
+                        <img class="gallery-nav-img" src="./images/img4.jpg">
+                    </a>
+                    <a href="#image5">
+                        <img class="gallery-nav-img" src="./images/img5.jpg">
+                    </a>
+                </nav>
+            </div>
+            <div class="posts-container" id="services">
+                <div class="post img-container">
+                    <img src="./images/gear.jpg">
+                    <div class="img-overlay overlay-fade">
+                        <div class="img-text"> Service 1</div>
+                    </div>
+                </div>
+                <div class="post img-container">
+                    <img src="./images/gear.jpg">
+                    <div class="img-overlay overlay-slide-top">
+                        <div class="img-text"> Service 2</div>
+                    </div>
+                </div>
+                <div class="post img-container">
+                    <img src="./images/gear.jpg">
+                    <div class="img-overlay overlay-slide-bottom">
+                        <div class="img-text"> Service 3</div>
+                    </div>
+                </div>
+                <div class="post img-container">
+                    <img src="./images/gear.jpg">
+                    <div class="img-overlay overlay-slide-left">
+                        <div class="img-text"> Service 4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="posts-container" id="about">
                 <div class="post">
                     <img src="./images/body-image-1.jpg"/>
                     <h1>ABOUT US</h1>
